@@ -1,0 +1,111 @@
+/* Experience Section */
+.experience-section {
+    background: $bg-img center/cover no-repeat;
+    padding: 60px 20px;
+    background-attachment: fixed;
+}
+ 
+.section-title {
+    text-align: center;
+    font-size:3em;
+    margin-bottom: 40px;
+    color: $titles-color;
+}
+ 
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+    
+}
+ 
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    background-color: rgba(255, 253, 253, 0.134);
+    border-radius: 5px;
+    border: 0.5px solid $std-color;
+    color: $std-color;
+    
+}
+ 
+.timeline-item.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+ 
+/* Left Section - Year and Logo */
+.timeline-left {
+    flex: 1;
+    text-align: center;
+}
+ 
+.timeline-year {
+    font-size: 1.8em;
+    color: $std-color;
+    display: block;
+    margin-bottom: 10px;
+}
+ 
+.company-logo {
+    max-width: 80px;
+    max-height: 80px;
+}
+ 
+/* Right Section - Title, Company, and Skills */
+.timeline-right {
+    flex: 3;
+    padding-left: 20px;
+    border-left: 2px solid $std-color;
+}
+ 
+.timeline-title {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+ 
+.skills-acquired {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ 
+.skill-badges {
+    display:inline-block;
+    gap: 20px;
+    
+}
+ 
+.skill-badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $std-color;
+    object-fit: contain;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .timeline-item {
+        flex-direction: column;
+    }
+    .timeline-right {
+        padding-left: 0;
+        border-left: none;
+        text-align: center;
+    }
+   
+}
+@media (max-width: 768px) {
+    .skill-badges {
+        grid-template-columns: repeat(4, 1fr);
+        }
+}

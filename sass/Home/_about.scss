@@ -1,0 +1,38 @@
+
+
+/* About Me Section */
+#about {
+    background-color: $bg-color; /* Dark grey background */
+     /* White text color */
+    padding: 40px 20px;
+    text-align: center; /* Center align text */
+}
+
+#about-me-title h2{
+    color: $titles-color !important;
+    font-size: 5rem;
+   
+}
+
+.about-text {
+    max-width: 850px; /* Increased width for better readability */
+    margin: 0 auto;
+    color: $std-color;
+    
+     /* Center align the text block */
+}
+
+.about-text p {
+    font-size: 1.2em; /* Slightly larger text */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-text p {
+        font-size: 1em; 
+}
+#about-me-title h2{
+    font-size: 3rem;
+}
+}

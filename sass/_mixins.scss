@@ -1,0 +1,108 @@
+
+@mixin navigation-bar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 70px;
+    background-color: $nav-bg!important;
+    font-size: 1.2rem ;
+}
+
+/*Buttons */
+
+@mixin round-button{
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    color: $std-color;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent whitish background */
+    border-radius: 50px; /* Rounded button */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Remove underline */
+
+
+}
+
+
+
+@mixin round-button-hover{
+    background-color: $btn-hover; /* Changes background to black */
+    color: white; /* Keeps text white */
+    text-decoration: none;
+}
+
+@mixin download-btn{     
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/*Animations */
+
+
+
+@mixin scroll-animation{
+    opacity: 0;
+    transform: translateY(100px); /* Slight movement for the reveal effect */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+@mixin scroll-inview{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@mixin project-card{
+    background-color: $projects-card-bg;
+    border: 1px solid #929292;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color:$std-color;
+    transition: 0.8s;
+    display:flex;
+}
+
+@mixin std-btn{
+    /* CSS */
+    .back {
+        
+        margin-top: 50px;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border: 1px solid rgb(255, 255, 255);
+        color: $std-color;
+        background-color: rgba(255, 255, 255, 0.1); /* Transparent whitish background */
+        width: 170px;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-decoration: none; /* Remove underline */
+        text-align: center;
+        margin-left:40%;
+        
+    }
+
+    .back:hover{
+        background-color: $btn-hover; /* Changes background to black */
+        color: $std-color; /* Keeps text white */
+        text-decoration: none;
+    }
+
+    @media (max-width:480px) {
+        .back {
+            margin: 10px;
+            margin-top: 80px;
+            width: 100%;
+        }
+        
+    }
+
+}

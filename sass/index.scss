@@ -1,0 +1,16 @@
+
+// Standard inputs
+
+@import'Home/base';
+@import'variables';
+@import'mixins';
+
+// importing each components and css for home page
+@import'Home/hero'; // Hero Section
+@import'Home/about'; // about Us Section
+@import'Home/skills'; // Tech Stack Section
+@import'Home/projects'; // Projects section
+@import'Home/experience'; // Experience Section
+
+@import'Projects/projects';
+@import'Projects/Project-bg-props';

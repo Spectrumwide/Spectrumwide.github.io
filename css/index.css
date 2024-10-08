@@ -1,0 +1,716 @@
+/* Apply Poppins to the entire page */
+/*Buttons */
+/*Animations */
+body {
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(41, 41, 41);
+  color: white;
+}
+
+/* Sticky Navbar Styles */
+nav.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.556) !important;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/* Add initial opacity and transition for elements */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(100px); /* Slight movement for the reveal effect */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When elements are in view, make them visible */
+.animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.download-btn {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.download-btn:hover {
+  background-color: rgb(116, 41, 77); /* Changes background to black */
+  color: white; /* Keeps text white */
+  text-decoration: none;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Social Links Container */
+.social-links {
+  display: flex;
+  justify-content: center; /* Center the icons */
+  align-items: center;
+  gap: 20px; /* Space between the icons */
+  margin-top: 20px;
+}
+
+/* Social Icon Styles */
+.social-icon {
+  width: 50px; /* Size of the icons */
+  height: 50px;
+  border-radius: 50%; /* Makes the icons rounded */
+  transition: transform 0.8s ease, box-shadow 0.8s ease; /* Animation */
+  object-fit: cover;
+}
+
+/* Experience and Education Sections */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Footer Styles */
+footer {
+  background: rgb(41, 41, 41);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/*Buttons */
+/*Animations */
+.hero-section {
+  position: relative;
+  height: 100vh; /* Full screen */
+  background: url("../Assets/hero-img.jpg") center center/cover no-repeat; /* Updated background image path */
+  background-attachment: fixed; /* Keeps background fixed during scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden; /* Prevents background issues when resizing */
+}
+
+/* Overlay to darken the background */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darkens the background image */
+  z-index: 1;
+}
+
+/* Hero content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 5.5em;
+  font-weight: bold;
+}
+
+.hero-tagline {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+/* Hero Button */
+.hero-btn {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent whitish background */
+  border-radius: 50px; /* Rounded button */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.hero-btn:hover {
+  background-color: rgb(116, 41, 77); /* Changes background to black */
+  color: white; /* Keeps text white */
+  text-decoration: none;
+}
+
+/* Container Styles */
+.container {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3.5em;
+  }
+  .hero-title .hero-btn {
+    font-size: 1em;
+  }
+}
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.5em;
+  }
+  .hero-tagline {
+    font-size: 1em;
+  }
+}
+/* About Me Section */
+#about {
+  background-color: rgb(41, 41, 41); /* Dark grey background */
+  /* White text color */
+  padding: 40px 20px;
+  text-align: center; /* Center align text */
+}
+
+#about-me-title h2 {
+  color: rgb(252, 223, 192) !important;
+  font-size: 5rem;
+}
+
+.about-text {
+  max-width: 850px; /* Increased width for better readability */
+  margin: 0 auto;
+  color: white;
+  /* Center align the text block */
+}
+
+.about-text p {
+  font-size: 1.2em; /* Slightly larger text */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-text p {
+    font-size: 1em;
+  }
+  #about-me-title h2 {
+    font-size: 3rem;
+  }
+}
+/* Skills Section Layout */
+#skills {
+  background: url("../Assets/timeline.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center; /* Center align both columns */
+  align-items: flex-start; /* Align items at the start */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  gap: 15px;
+  color: rgb(252, 223, 192); /* Add gap between columns */
+}
+
+.skills-left, .skills-right {
+  flex: 1;
+  max-width: 50%; /* Limit width to half of the container */
+}
+
+.skills-left {
+  text-align: center; /* Center align text in the left column */
+}
+
+.skills-left h1 {
+  font-size: 4rem;
+  top: 50%;
+  left: 50%;
+  margin: 25%;
+  padding-top: 15px;
+  color: rgb(252, 223, 192);
+}
+
+.skills-right {
+  text-align: center; /* Center align text in the right column */
+}
+
+.skills-subcategory {
+  margin-bottom: 40px;
+}
+
+.skills-subcategory h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-box {
+  /*border color*/
+  padding: 0px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px; /* Fixed width for consistency */
+}
+
+.skill-box h4 {
+  margin: 10px 0;
+}
+
+.skill-logo {
+  width: 120px; /* Adjust logo size as needed */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .skills-left h1 {
+    font-size: 2.5rem;
+  }
+  .skills-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .skills-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skill-logo {
+    width: 90px;
+  }
+}
+/* Projects Section */
+.projects-section {
+  background-image: url("../Assets/r21do1.gif");
+  padding: 60px 20px;
+  color: white;
+  background-attachment: fixed;
+}
+
+.section-title h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+  gap: 20px; /* Space between columns */
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .project-description {
+    font-size: 0.5em;
+  }
+  .section-title h2 {
+    font-size: 1em;
+  }
+}
+.project-card {
+  background-color: rgba(255, 255, 255, 0.1450980392);
+  border: 1px solid #929292;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  transition: 0.8s;
+  display: flex;
+}
+
+.project-card:hover {
+  background-color: rgba(255, 255, 255, 0.3764705882);
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  margin: 15px 0 10px;
+}
+
+.project-description {
+  font-size: 1em;
+  color: white;
+}
+
+/* Experience Section */
+.experience-section {
+  background: url("../Assets/timeline.jpg") center/cover no-repeat;
+  padding: 60px 20px;
+  background-attachment: fixed;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: rgb(252, 223, 192);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  background-color: rgba(255, 253, 253, 0.134);
+  border-radius: 5px;
+  border: 0.5px solid white;
+  color: white;
+}
+
+.timeline-item.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Left Section - Year and Logo */
+.timeline-left {
+  flex: 1;
+  text-align: center;
+}
+
+.timeline-year {
+  font-size: 1.8em;
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.company-logo {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+/* Right Section - Title, Company, and Skills */
+.timeline-right {
+  flex: 3;
+  padding-left: 20px;
+  border-left: 2px solid white;
+}
+
+.timeline-title {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+.skills-acquired {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skill-badges {
+  display: inline-block;
+  gap: 20px;
+}
+
+.skill-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  object-fit: contain;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+  }
+  .timeline-right {
+    padding-left: 0;
+    border-left: none;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .skill-badges {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*Buttons */
+/*Animations */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(41, 41, 41);
+}
+
+/* Sticky Navbar Styles */
+nav.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.556) !important;
+  font-size: 1.2rem;
+}
+
+.hero-section-audit {
+  position: relative;
+  height: 100vh; /* Full screen */
+  background: url("../Assets/Audit/audit-background.jpg") center center/cover no-repeat; /* Updated background image path */
+  background-attachment: fixed; /* Keeps background fixed during scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-section-FYP {
+  position: relative;
+  height: 100vh; /* Full screen */
+  background: url("../Assets/FYP/cover.jpg") center center/cover no-repeat; /* Updated background image path */
+  background-attachment: fixed; /* Keeps background fixed during scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  padding: 20%;
+}
+
+/* Overlay to darken the background */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darkens the background image */
+  z-index: 1;
+}
+
+/* Hero content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title-project {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+.hero-title-project-long {
+  font-weight: bold;
+}
+
+.hero-tagline-project {
+  font-size: 1.2em;
+  margin: 20px 0;
+  max-width: 900px;
+}
+
+/* Hero Button */
+.hero-btn {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent whitish background */
+  border-radius: 50px; /* Rounded button */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.hero-btn:hover {
+  background-color: rgb(116, 41, 77); /* Changes background to black */
+  color: white; /* Keeps text white */
+  text-decoration: none;
+}
+
+/* Container Styles */
+.container {
+  padding: 20px;
+}
+
+/* About Section */
+#project-detailed {
+  background: url("../Assets/timeline.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
+  color: #c9c8c8;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.project-text, .project-text-list, .project-text-subheadings, .skill-badges, .back-btn {
+  margin-top: 10px;
+  max-width: 950px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.project-text-list {
+  text-align: left;
+}
+
+.project-text-subheadings {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(252, 223, 192);
+}
+
+.project-showcase-img-cont {
+  width: 100%;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+}
+
+.project-showcase-img {
+  width: 100%;
+  height: auto;
+}
+
+.skill-badges-projects {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+@media (max-width: 480px) {
+  .skill-badges-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.skill-badge-project {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  object-fit: fill;
+  margin: 10px;
+}
+
+@media (max-width: 480px) {
+  .skill-badge-projects {
+    width: 60px;
+    height: 60px;
+  }
+}
+/* Project Detail Section */
+/* Footer Styles */
+.footer-projects {
+  background: rgb(41, 41, 41);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* CSS */
+.back {
+  margin-top: 50px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent whitish background */
+  width: 170px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+  text-align: center;
+  margin-left: 40%;
+}
+
+.back:hover {
+  background-color: rgb(116, 41, 77); /* Changes background to black */
+  color: white; /* Keeps text white */
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .back {
+    margin: 10px;
+    margin-top: 80px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-title-project {
+    font-size: 2.5em;
+  }
+  .hero-title-project .hero-btn {
+    font-size: 1em;
+  }
+  .hero-title-project .hero-tagline-project {
+    font-size: 1em;
+  }
+}
+@media (max-width: 480px) {
+  .hero-title-project {
+    font-size: 2em;
+  }
+  .hero-tagline-project {
+    font-size: 1em;
+    width: 100%;
+  }
+  .project-text, .project-text-list, .back-btn {
+    font-size: 0.8em;
+  }
+  .project-text-subheadings {
+    font-size: 1.8em;
+  }
+}

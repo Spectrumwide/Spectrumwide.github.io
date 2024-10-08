@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail</title>
+    <link rel = "icon" href = "/Assets/logo.jpg" type = "image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- Link to Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/index.html">Spectrum</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html#hero">Home</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-audit">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title-project">Audit Management</h1>
+            <br>
+            <br>
+            <p class="hero-tagline-project">Online portal that lets authorized users to select b/w yes or no responses for Internal/SOX Audit Type questions and reflecting the same on result page based on audit type response captured. </p>
+            <br>
+            <a href="https://github.com/GurukiranD2019/Audit-Management" class="hero-btn">View Project</a>
+        </div>
+    </section>
+
+    <!-- About Me Section (Reused) -->
+    <section id="project-detailed" class="about-section">
+      <div class="container">
+            
+        <h1 class="section-title">Case Study</h1>
+          
+            
+            <div class="project-showcase-img-cont">
+              <img class="project-showcase-img" src="/Assets/Audit/Pro1screen1.png" alt="" width="800px">
+            </div>
+
+            <p class="project-text">
+              This project was assigned to us as a team to come up with a system to automate the Audit processing, to make the management scalable and ensure clarity and ease of tracking. Hence we had to come up with a Full Stack Solution.After going through the problem statement and functionality we discussed and divided work among ourselves. 
+            </p>
+
+            <div class="project-showcase-img-cont">
+              <img class="project-showcase-img" src="/Assets/Audit/pro1screen2.png" alt="" width="800px">
+            </div>
+
+            <p class="project-text">
+              Audit Management Portal allows user to login. Once successfully logged in, the following operations needs to be done: Choose the audit type to view the list of audit checklist questions wherein the project manager provides answers to the set of questions. Once it is done, the Audit Severity Microservice is invoked which determines the project execution status after analyzing the same, the result will be displayed on the portal. The audit response details along with the project execution status and remedial action duration are saved in the database. 
+            </p>
+            <br>
+            <p class="project-text">
+              This Project was divided into 4 Modules for Backend :
+            </p>
+            <br>
+
+            <ol class="project-text-list">
+                <li>Authorization Microservice</li>
+                <li>Audit Checklist Microservice</li>
+                <li>Audit BenchMark Microservice</li>
+                <li>Audit Severity Microservice</li>
+            </ol>
+
+            <div class="project-showcase-img-cont">
+              <img class="project-showcase-img" src="/Assets/Audit/pro1screen3.png" alt="" width="800px">
+            </div>
+              
+            <h3 class="project-text-subheadings" style="text-align: center;">
+              Portal Summary
+            </h3>
+
+            <p class="project-text">
+              In order to enter the Portal, the project Manager has to login using their Credentials (Authorization Microservice)and then the Project Manager gets an option to choose between the Internal/SOX Type Audit Questions.Based on the Option selected by the project Manager, the Audit Questions will be displayed which will be Yes/No type questions.(Audit Checklist Microservice) and the options are selected. 
+            </p>
+
+            <div class="project-showcase-img-cont">
+              <img class="project-showcase-img" src="/Assets/Audit/pro1screen4.png" alt="" width="800px">
+            </div>
+
+            <p class="project-text">
+          
+              The response will be captured and process the result(Audit benchmark Microservice) Then the result sheet will be displayed to the Project manager which will decide the actions to be taken based on the individual Manager's response. 
+        
+            </p>
+
+            <div class="project-showcase-img-cont">
+              <img class="project-showcase-img" src="/Assets/Audit/pro1screen5.png" alt="" width="800px">
+            </div>
+
+            <h3 class="project-text-subheadings">
+              Tech Stack
+            </h3>
+  
+            <div class="skill-badges-projects">
+              
+            <div>
+               <img src="/Assets/Web-logo.png" alt="Skill 1"class="skill-badge-project">
+              <p>HTML, CSS <br> JS</p></div> 
+  
+            <div>  
+              <img src="/Assets/Audit/ts.png" alt="Skill 2" class="skill-badge-project">
+              <p>Typescript</p></div>
+  
+            <div>
+              <img src="/Assets/Audit/springboot.png" alt="Skill 3" class="skill-badge-project">
+              <p>springboot</p>
+            </div>
+  
+            <div>
+              <img src="/Assets/angular.png" alt="Skill 3" class="skill-badge-project">
+              <p>Angular</p>
+            </div>
+
+            <div>
+              <img src="/Assets/node.png" alt="Skill 3" class="skill-badge-project">
+              <p>NodeJS</p>
+            </div>
+
+            <div>
+              <img src="/Assets/mysql-logo.png" alt="Skill 3" class="skill-badge-project">
+              <p>MYSQL</p>
+            </div>
+
+            <div>
+              <img src="/Assets/Audit/API.jpg" alt="Skill 3" class="skill-badge-project">
+              <p>API call</p>
+            </div>
+  
+            </div>
+
+
+            <h3 class="project-text-subheadings">
+              Tools
+            </h3>
+  
+            <div class="skill-badges-projects">
+              
+            <div>
+               <img src="/Assets/eclipse.png" alt="Skill 1"class="skill-badge-project">
+              <p>Eclipse IDE</p></div> 
+  
+            <div>  
+              <img src="/Assets/vs-code.png" alt="Skill 2" class="skill-badge-project">
+              <p>VS Code</p></div>
+  
+            <div>
+              <img src="/Assets/Audit/postman.png" alt="Skill 3" class="skill-badge-project">
+              <p>postman</p>
+            </div>
+  
+            <div>
+              <img src="/Assets/aws.png" alt="Skill 3" class="skill-badge-project">
+              <p>Amazon Web Services</p>
+            </div>
+
+            <div>
+              <img src="/Assets/Audit/database.png" alt="Skill 3" class="skill-badge-project">
+              <p>H2 Database Engine</p>
+            </div>
+
+            <div>
+              <img src="/Assets/Audit/apache.png" alt="Skill 3" class="skill-badge-project">
+              <p>Apache Tomcat</p>
+            </div>
+  
+            </div>
+  
+  
+            <h3 class="project-text-subheadings">
+              References
+            </h3>
+  
+            <br>
+            <p style="text-align: left; margin-left: 50px;"><a href="https://docs.google.com/presentation/d/1kEjTrd9mNJN8AqeNtEhm9tdd7M7-HbOZ/edit#slide=id.p1"> - Powerpoint</a></p>
+            
+            
+  
+              <a href="/index.html" class="back-link">
+                <div class="back">Go Back</div></a>
+         </div>
+       </div>
+
+
+
+
+
+
+
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-projects">
+        <p>&copy;All Rights Reserved 2024.</p>
+        <p>Designed and Developed by Gurukiran </p>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
