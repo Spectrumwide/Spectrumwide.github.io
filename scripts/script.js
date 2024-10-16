@@ -28,3 +28,11 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus",() => {
   document.title = docTitle;
 })
+
+function contactbox() {
+    alert(" Contact no: +91 8310984353 ");
+  }
+
+function emailbox(){
+    alert(" Email address: gurukiran.gkd@gmail.com")
+}
