@@ -649,6 +649,18 @@ nav.navbar {
   gap: 8px;
 }
 
+@media (max-width: 990px) {
+  .skill-badges-projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .skill-badges-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (max-width: 480px) {
   .skill-badges-projects {
     display: grid;
