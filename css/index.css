@@ -78,6 +78,13 @@ h2 {
   margin-top: 20px;
 }
 
+@media (max-width: 480px) {
+  .social-links {
+    display: table;
+    table-layout: auto;
+    gap: 10px;
+  }
+}
 /* Social Icon Styles */
 .social-icon {
   width: 50px; /* Size of the icons */
