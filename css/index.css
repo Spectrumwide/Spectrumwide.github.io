@@ -534,6 +534,19 @@ nav.navbar {
   padding: 20%;
 }
 
+.hero-section-strings {
+  position: relative;
+  height: 100vh; /* Full screen */
+  background: url("../Assets/strings/stringsback.jpg") center center/cover no-repeat; /* Updated background image path */
+  background-attachment: fixed; /* Keeps background fixed during scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
 /* Overlay to darken the background */
 .overlay {
   position: absolute;

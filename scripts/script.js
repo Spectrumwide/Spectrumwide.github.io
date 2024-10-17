@@ -36,3 +36,7 @@ function contactbox() {
 function emailbox(){
     alert(" Email address: gurukiran.gkd@gmail.com")
 }
+
+function contactme_box(){
+    alert("For project details, please reach out to me via email or contact me")
+}

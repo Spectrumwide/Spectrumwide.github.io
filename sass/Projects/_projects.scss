@@ -24,6 +24,10 @@ body {
   @include hero-FYP;
 }
 
+.hero-section-strings{
+  @include hero-strings;
+}
+
 /* Overlay to darken the background */
 .overlay {
     position: absolute;
