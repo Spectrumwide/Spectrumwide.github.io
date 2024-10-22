@@ -1,209 +1,201 @@
-@import 'variables';
-@import 'Project-bg-props';
-@import 'mixins';
+@import "variables";
+@import "Project-bg-props";
+@import "mixins";
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: $bg-color;
-  }
-  
-  /* Sticky Navbar Styles */
-  nav.navbar {
-@include navigation-bar;
-    
-  }
-  
-  .hero-section-audit {
-@include hero-audit; 
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $bg-color;
 }
 
-.hero-section-FYP{
+/* Sticky Navbar Styles */
+nav.navbar {
+  @include navigation-bar;
+}
+
+.hero-section-audit {
+  @include hero-audit;
+}
+
+.hero-section-FYP {
   @include hero-FYP;
 }
 
-.hero-section-strings{
+.hero-section-strings {
   @include hero-strings;
 }
 
 /* Overlay to darken the background */
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Darkens the background image */
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darkens the background image */
+  z-index: 1;
 }
 
 /* Hero content */
 .hero-content {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-title-project {
-    font-size: 3.5em;
-    font-weight: bold;
+  font-size: 3.5em;
+  font-weight: bold;
 }
 
-.hero-title-project-long{
+.hero-title-project-long {
   font-weight: bold;
 }
 
 .hero-tagline-project {
-    font-size: 1.2em;
-    margin: 20px 0;
-    max-width: 900px;
+  font-size: 1.2em;
+  margin: 20px 0;
+  max-width: 900px;
 }
-
 
 /* Hero Button */
 .hero-btn {
-@include round-button;
+  @include round-button;
 }
 
 .hero-btn:hover {
-@include round-button-hover /* Remove underline on hover */
+  @include round-button-hover /* Remove underline on hover */;
 }
 /* Container Styles */
 .container {
-    padding: 20px;
+  padding: 20px;
 }
 
-  /* About Section */
-  #project-detailed {
-    background: $bg-img center center/cover no-repeat;
-    background-attachment: fixed;
-    color:#c9c8c8;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .project-text,.project-text-list,.project-text-subheadings,.skill-badges,.back-btn{
-    margin-top: 10px;
-    max-width: 950px;
-    margin: 0 auto;
-    font-size: 1.2em;
-    line-height: 1.6;
-    text-align: justify;
-  }
-  
-  .project-text-list{
-    text-align: left;
-   
-  }
-  
-  .project-text-subheadings{
-    text-align: left;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color:$titles-color;
-  }
-  
-  .project-showcase-img-cont {
-  
-    width: 100%;
-    margin-bottom: 4rem;
-    margin-top: 5rem;
-    
-  }
-  
-  .project-showcase-img{
-    width: 100%;
-    height:auto;
-  
-  }
-  
+/* About Section */
+#project-detailed {
+  background: $bg-img center center/cover no-repeat;
+  background-attachment: fixed;
+  color: #c9c8c8;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.project-text,
+.project-text-list,
+.project-text-subheadings,
+.skill-badges,
+.back-btn {
+  margin-top: 10px;
+  max-width: 950px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.project-text-list {
+  text-align: left;
+}
+
+.project-text-subheadings {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: $titles-color;
+}
+
+.project-showcase-img-cont {
+  width: 100%;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+}
+
+.project-showcase-img {
+  width: 100%;
+  height: auto;
+}
+
+.skill-badges-projects {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+@media (max-width: 990px) {
   .skill-badges-projects {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
   }
-  @media (max-width: 990px) {
-    .skill-badges-projects {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);}
-  }
- 
+}
 
-  @media (max-width: 768px) {
-    .skill-badges-projects {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);}
+@media (max-width: 768px) {
+  .skill-badges-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
-  @media (max-width: 480px) {
-    .skill-badges-projects {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);}
+}
+@media (max-width: 480px) {
+  .skill-badges-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
- 
-  .skill-badge-project {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    object-fit: fill;
-    margin: 10px;
-  }
+.skill-badge-project {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  object-fit: fill;
+  margin: 10px;
+}
 
-  @media (max-width: 480px) {
-    .skill-badge-projects {
-      width: 60px;
-      height: 60px;
-    }
+@media (max-width: 480px) {
+  .skill-badge-projects {
+    width: 60px;
+    height: 60px;
   }
-  /* Project Detail Section */
-  
-  
-  /* Footer Styles */
-  .footer-projects {
-    background: $bg-color;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-  }
-  @include std-btn;
+}
+/* Project Detail Section */
 
-  @media (max-width: 768px) {
-    .hero-title-project {
+/* Footer Styles */
+.footer-projects {
+  background: $bg-color;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+@include std-btn;
+
+@media (max-width: 768px) {
+  .hero-title-project {
     font-size: 2.5em;
-    
-    
-    .hero-btn{
-        font-size:1em;
+
+    .hero-btn {
+      font-size: 1em;
     }
-    .hero-tagline-project{
-      font-size:1em ;
-      
+    .hero-tagline-project {
+      font-size: 1em;
     }
-    
-}}
-
-@media (max-width:480px){
-
-
-.hero-title-project {
-  font-size: 2em;
+  }
 }
 
-.hero-tagline-project {
-    font-size:1em;
+@media (max-width: 480px) {
+  .hero-title-project {
+    font-size: 2em;
+  }
+
+  .hero-tagline-project {
+    font-size: 1em;
     width: 100%;
+  }
+  .project-text,
+  .project-text-list,
+  .back-btn {
+    font-size: 0.8em;
+  }
+  .project-text-subheadings {
+    font-size: 1.8em;
+  }
 }
-.project-text,.project-text-list,.back-btn{
-  font-size: 0.8em;
-}
-.project-text-subheadings{
-  font-size: 1.8em;
-}
-
-
-
-}
- 
