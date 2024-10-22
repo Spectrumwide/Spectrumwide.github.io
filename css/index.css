@@ -240,7 +240,8 @@ footer {
   color: rgb(252, 223, 192); /* Add gap between columns */
 }
 
-.skills-left, .skills-right {
+.skills-left,
+.skills-right {
   flex: 1;
   max-width: 50%; /* Limit width to half of the container */
 }
@@ -255,7 +256,7 @@ footer {
   left: 50%;
   margin: 25%;
   padding-top: 15px;
-  color: rgb(252, 223, 192);
+  color: rgb(252, 223, 192); /* Add padding to adjust top margin */
 }
 
 .skills-right {
@@ -292,7 +293,7 @@ footer {
 }
 
 .skill-logo {
-  width: 120px; /* Adjust logo size as needed */
+  width: 95px; /* Adjust logo size as needed */
   height: auto;
 }
 
@@ -611,7 +612,11 @@ nav.navbar {
   text-align: center;
 }
 
-.project-text, .project-text-list, .project-text-subheadings, .skill-badges, .back-btn {
+.project-text,
+.project-text-list,
+.project-text-subheadings,
+.skill-badges,
+.back-btn {
   margin-top: 10px;
   max-width: 950px;
   margin: 0 auto;
@@ -739,7 +744,9 @@ nav.navbar {
     font-size: 1em;
     width: 100%;
   }
-  .project-text, .project-text-list, .back-btn {
+  .project-text,
+  .project-text-list,
+  .back-btn {
     font-size: 0.8em;
   }
   .project-text-subheadings {

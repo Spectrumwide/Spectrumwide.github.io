@@ -1,100 +1,96 @@
-
-
 /* Skills Section Layout */
 #skills {
-    background: url('../Assets/timeline.jpg') center center/cover no-repeat;
-    background-attachment: fixed;
-    padding: 40px 20px;
-    text-align: center;
+  background: url("../Assets/timeline.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 40px 20px;
+  text-align: center;
 }
-
-
 
 .skills-container {
-    display: flex;
-    justify-content: center; /* Center align both columns */
-    align-items: flex-start; /* Align items at the start */
-    flex-wrap: wrap; /* Allow wrapping if needed */
-    gap: 15px; 
-    color: $titles-color;/* Add gap between columns */
+  display: flex;
+  justify-content: center; /* Center align both columns */
+  align-items: flex-start; /* Align items at the start */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  gap: 15px;
+  color: $titles-color; /* Add gap between columns */
 }
 
-.skills-left, .skills-right {
-    flex: 1;
-    max-width: 50%; /* Limit width to half of the container */
+.skills-left,
+.skills-right {
+  flex: 1;
+  max-width: 50%; /* Limit width to half of the container */
 }
 
 .skills-left {
-    text-align: center; /* Center align text in the left column */
+  text-align: center; /* Center align text in the left column */
 }
 
 .skills-left h1 {
-    font-size: 4rem;
-    top:50%;
-    left: 50%;
-    margin: 25%;
-    padding-top: 15px;
-    color:$titles-color /* Add padding to adjust top margin */
+  font-size: 4rem;
+  top: 50%;
+  left: 50%;
+  margin: 25%;
+  padding-top: 15px;
+  color: $titles-color; /* Add padding to adjust top margin */
 }
 
 .skills-right {
-    text-align: center; /* Center align text in the right column */
+  text-align: center; /* Center align text in the right column */
 }
 
 .skills-subcategory {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .skills-subcategory h3 {
-    font-size: 2em;
-    margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .skills-list {
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .skill-box {
-     /*border color*/
-    padding: 0px;
-    margin: 10px;
-    border-radius: 8px;
-    text-align: center;
-    width: 150px; /* Fixed width for consistency */
+  /*border color*/
+  padding: 0px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px; /* Fixed width for consistency */
 }
 
 .skill-box h4 {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .skill-logo {
-    width:120px; /* Adjust logo size as needed */
-    height: auto;
+  width: 95px; /* Adjust logo size as needed */
+  height: auto;
 }
 @media (max-width: 768px) {
+  .skills-left h1 {
+    font-size: 2.5rem;
+  }
 
-    .skills-left h1 {
-        font-size: 2.5rem ;
-    }
+  .skills-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    .skills-container {
-        grid-template-columns:repeat(1, 1fr);
-    }
-
-    .skills-list {
-        grid-template-columns:repeat(2, 1fr);   
-    }
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (max-width:480px){
-    .skills-list {
-        grid-template-columns:repeat(1, 1fr);   
-    }
+@media (max-width: 480px) {
+  .skills-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    .skill-logo {
-        width:90px;
-    }
-}   
+  .skill-logo {
+    width: 90px;
+  }
+}
