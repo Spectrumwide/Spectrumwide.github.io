@@ -27,6 +27,10 @@ nav.navbar {
   @include hero-strings;
 }
 
+.hero-section-SKF {
+  @include hero-SKF;
+}
+
 /* Overlay to darken the background */
 .overlay {
   position: absolute;
