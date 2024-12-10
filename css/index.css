@@ -29,7 +29,7 @@ h2 {
 /* Add initial opacity and transition for elements */
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(100px); /* Slight movement for the reveal effect */
+  transform: translateY(100px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
@@ -51,8 +51,8 @@ h2 {
 
 /* Darker background on mouse-over */
 .download-btn:hover {
-  background-color: rgb(116, 41, 77); /* Changes background to black */
-  color: white; /* Keeps text white */
+  background-color: rgb(116, 41, 77);
+  color: white;
   text-decoration: none;
 }
 
@@ -112,29 +112,27 @@ footer {
 /*Animations */
 .hero-section {
   position: relative;
-  height: 100vh; /* Full screen */
-  background: url("../Assets/hero-img.jpg") center center/cover no-repeat; /* Updated background image path */
-  background-attachment: fixed; /* Keeps background fixed during scroll */
+  height: 100vh;
+  background: url("../Assets/hero-img.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
-  overflow: hidden; /* Prevents background issues when resizing */
+  overflow: hidden;
 }
 
-/* Overlay to darken the background */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Darkens the background image */
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
-/* Hero content */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -150,25 +148,23 @@ footer {
   margin: 20px 0;
 }
 
-/* Hero Button */
 .hero-btn {
   font-size: 1.2em;
   padding: 10px 20px;
   border: 2px solid rgb(255, 255, 255);
   color: white;
-  background-color: rgba(255, 255, 255, 0.1); /* Transparent whitish background */
-  border-radius: 50px; /* Rounded button */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  text-decoration: none; /* Remove underline */
-}
-
-.hero-btn:hover {
-  background-color: rgb(116, 41, 77); /* Changes background to black */
-  color: white; /* Keeps text white */
   text-decoration: none;
 }
 
-/* Container Styles */
+.hero-btn:hover {
+  background-color: rgb(116, 41, 77);
+  color: white;
+  text-decoration: none;
+}
+
 .container {
   padding: 20px;
 }
@@ -332,8 +328,8 @@ footer {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two-column layout */
-  gap: 20px; /* Space between columns */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 @media (max-width: 768px) {
@@ -510,9 +506,9 @@ nav.navbar {
 
 .hero-section-audit {
   position: relative;
-  height: 100vh; /* Full screen */
-  background: url("../Assets/Audit/audit-background.jpg") center center/cover no-repeat; /* Updated background image path */
-  background-attachment: fixed; /* Keeps background fixed during scroll */
+  height: 100vh;
+  background: url("../Assets/Audit/audit-background.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -523,9 +519,9 @@ nav.navbar {
 
 .hero-section-FYP {
   position: relative;
-  height: 100vh; /* Full screen */
-  background: url("../Assets/FYP/cover.jpg") center center/cover no-repeat; /* Updated background image path */
-  background-attachment: fixed; /* Keeps background fixed during scroll */
+  height: 100vh;
+  background: url("../Assets/FYP/cover.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -537,9 +533,9 @@ nav.navbar {
 
 .hero-section-strings {
   position: relative;
-  height: 100vh; /* Full screen */
-  background: url("../Assets/strings/stringsback.jpg") center center/cover no-repeat; /* Updated background image path */
-  background-attachment: fixed; /* Keeps background fixed during scroll */
+  height: 100vh;
+  background: url("../Assets/strings/stringsback.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -550,9 +546,9 @@ nav.navbar {
 
 .hero-section-SKF {
   position: relative;
-  height: 100vh; /* Full screen */
-  background: url("../Assets/SKF/SKF-COVER.jpg") center center/cover no-repeat; /* Updated background image path */
-  background-attachment: fixed; /* Keeps background fixed during scroll */
+  height: 100vh;
+  background: url("../Assets/SKF/SKF-Hero.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -599,15 +595,15 @@ nav.navbar {
   padding: 10px 20px;
   border: 2px solid rgb(255, 255, 255);
   color: white;
-  background-color: rgba(255, 255, 255, 0.1); /* Transparent whitish background */
-  border-radius: 50px; /* Rounded button */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
 }
 
 .hero-btn:hover {
-  background-color: rgb(116, 41, 77); /* Changes background to black */
-  color: white; /* Keeps text white */
+  background-color: rgb(116, 41, 77);
+  color: white;
   text-decoration: none;
 }
 
@@ -709,25 +705,24 @@ nav.navbar {
   text-align: center;
 }
 
-/* CSS */
 .back {
   margin-top: 50px;
   font-size: 1.2em;
   padding: 10px 20px;
   border: 1px solid rgb(255, 255, 255);
   color: white;
-  background-color: rgba(255, 255, 255, 0.1); /* Transparent whitish background */
+  background-color: rgba(255, 255, 255, 0.1);
   width: 170px;
   border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   text-align: center;
   margin-left: 40%;
 }
 
 .back:hover {
-  background-color: rgb(116, 41, 77); /* Changes background to black */
-  color: white; /* Keeps text white */
+  background-color: rgb(116, 41, 77);
+  color: white;
   text-decoration: none;
 }
 

@@ -1,8 +1,8 @@
 @mixin hero-audit {
   position: relative;
-  height: 100vh; /* Full screen */
-  background: $audit-hero center center/cover no-repeat; /* Updated background image path */
-  background-attachment: fixed; /* Keeps background fixed during scroll */
+  height: 100vh;
+  background: $audit-hero center center/cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,9 +13,9 @@
 
 @mixin hero-FYP {
   position: relative;
-  height: 100vh; /* Full screen */
-  background: $FYP-hero center center/cover no-repeat; /* Updated background image path */
-  background-attachment: fixed; /* Keeps background fixed during scroll */
+  height: 100vh;
+  background: $FYP-hero center center/cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,9 +27,9 @@
 
 @mixin hero-strings {
   position: relative;
-  height: 100vh; /* Full screen */
-  background: $Strings-hero center center/cover no-repeat; /* Updated background image path */
-  background-attachment: fixed; /* Keeps background fixed during scroll */
+  height: 100vh;
+  background: $Strings-hero center center/cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,9 +40,9 @@
 
 @mixin hero-SKF {
   position: relative;
-  height: 100vh; /* Full screen */
-  background: $SKF-hero center center/cover no-repeat; /* Updated background image path */
-  background-attachment: fixed; /* Keeps background fixed during scroll */
+  height: 100vh;
+  background: $SKF-hero center center/cover no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
