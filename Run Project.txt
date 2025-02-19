@@ -1,0 +1,22 @@
+Steps to Run the code 
+
+Step 1: Make changes in your scss files and save 
+
+Step 2: Open terminal and navigate to project directory properly (Spectrum-SASS/.)
+
+Step 3: Run program to convert SASS to CSS and no need to run node if changes are made in html
+
+Step 4: To run SASS+Gulp use : ~ npm run gulp 
+
+Step 5: See output by opening page in localhost server.
+
+
+Managing Git:
+
+~ git init
+
+~git add .
+
+~ git commit -am new changes
+
+~ git push
