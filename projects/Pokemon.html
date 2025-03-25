@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings</title>
+    <link rel="icon" href="/Assets/logo.jpg" type="image/x-icon" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/index.css" />
+    <!-- Link to Google Fonts for Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/index.html">Spectrum</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-pokemon">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title-project">Pokemon Sprite generator</h1>
+        <br />
+        <br />
+        <p class="hero-tagline-project">
+          A simple Web Application for Pokemon fans which retrieves sprite image
+          via API and displayes a specific pokemon image based on user input
+        </p>
+        <br />
+      </div>
+    </section>
+
+    <!-- About Me Section (Reused) -->
+    <section id="project-detailed" class="about-section">
+      <div class="container">
+        <h1 class="section-title">Case Study</h1>
+
+        <div class="project-showcase-img-cont">
+          <img
+            class="project-showcase-img"
+            src="/Assets/Pokemon/Homepage_snap.png"
+            alt=""
+            width="800px"
+          />
+        </div>
+
+        <p class="project-text">
+          This project is a simple HTML application designed for Pokemon
+          enthusiasts. It allows users to retrieve and display Pokemon sprite
+          images using the PokeAPI. The application features a user-friendly
+          interface where users can input the name or ID of a Pokemon to fetch
+          its sprite. It utilizes modern web technologies such as HTML, CSS, and
+          JavaScript to create an interactive experience. The PokeAPI is
+          integrated to fetch real-time data, ensuring accurate and up-to-date
+          Pokemon information. The application is lightweight and responsive,
+          making it accessible across various devices and screen sizes. Error
+          handling is implemented to provide feedback if the user enters an
+          invalid Pokemon name or ID. This project demonstrates the use of API
+          calls, DOM manipulation, and event handling in JavaScript.
+        </p>
+        <br />
+
+        <div class="project-showcase-img-cont">
+          <img
+            class="project-showcase-img"
+            src="/Assets/Pokemon/Fetchedimg.png"
+            alt=""
+            width="800px"
+          />
+        </div>
+
+        <br /><br />
+
+        <h3 class="project-text-subheadings" style="text-align: center">
+          Concepts
+        </h3>
+
+        <div class="skill-badges-projects">
+          <div>
+            <img
+              src="/Assets/html.jpg"
+              alt="Skill 1"
+              class="skill-badge-project"
+            />
+            <p>HTML 5</p>
+          </div>
+
+          <div>
+            <img
+              src="/Assets/css.png"
+              alt="Skill 2"
+              class="skill-badge-project"
+            />
+            <p>CSS</p>
+          </div>
+
+          <div>
+            <img
+              src="/Assets/Bootstrap-logo.png"
+              alt="Skill 3"
+              class="skill-badge-project"
+            />
+            <p>Bootstrap</p>
+          </div>
+
+          <div>
+            <img
+              src="/Assets/js.png"
+              alt="Skill 3"
+              class="skill-badge-project"
+            />
+            <p>Javascript</p>
+          </div>
+
+          <div>
+            <img
+              src="/Assets/REST_api.png"
+              alt="Skill 3"
+              class="skill-badge-project"
+            />
+            <p>REST API</p>
+          </div>
+        </div>
+        <a href="/index.html" class="back-link">
+          <div class="back">Go Back</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-projects">
+      <p>&copy;All Rights Reserved 2024.</p>
+      <p>Designed and Developed by Gurukiran</p>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

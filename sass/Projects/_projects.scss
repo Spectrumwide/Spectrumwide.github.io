@@ -31,6 +31,9 @@ nav.navbar {
   @include hero-SKF;
 }
 
+.hero-section-pokemon {
+  @include hero-Pokemon;
+}
 /* Overlay to darken the background */
 .overlay {
   position: absolute;
