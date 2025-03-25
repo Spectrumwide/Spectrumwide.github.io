@@ -17,6 +17,6 @@ Managing Git:
 
 ~git add .
 
-~ git commit -am new changes
+~ git commit -m new changes
 
 ~ git push
