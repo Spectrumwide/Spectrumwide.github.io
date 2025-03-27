@@ -63,3 +63,16 @@
   text-align: center;
   overflow: hidden;
 }
+
+@mixin hero-BMS {
+  position: relative;
+  height: 100vh;
+  background: $BMS-hero center center/cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $std-color;
+  text-align: center;
+  overflow: hidden;
+}
