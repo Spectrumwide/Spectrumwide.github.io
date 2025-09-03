@@ -183,6 +183,6 @@ Spectrumwide.github.io/
 
 For any technical issues or questions, please contact:
 
-- Email: [Your Email]
+- Email: [gurukiran.dayanand@gmail.com]
 - GitHub: [GurukiranD2019](https://github.com/GurukiranD2019)
 - LinkedIn: [Gurukiran D](https://www.linkedin.com/in/gurukiran-d-192362194/)
