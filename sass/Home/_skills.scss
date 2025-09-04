@@ -70,6 +70,13 @@
 .skill-logo {
   width: 95px; /* Adjust logo size as needed */
   height: auto;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+
+  &:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+  }
 }
 @media (max-width: 768px) {
   .skills-left h1 {
