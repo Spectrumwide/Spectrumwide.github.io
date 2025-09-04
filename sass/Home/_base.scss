@@ -1,102 +1,99 @@
 /* Apply Poppins to the entire page */
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 body {
-    font-family: $primary-text-font;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color:$bg-color;
-    color:$std-color;
+  font-family: $primary-text-font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $bg-color;
+  color: $std-color;
 }
 
 /* Sticky Navbar Styles */
 nav.navbar {
-@include navigation-bar;
+  @include navigation-bar;
 }
 
-
-h2{
-    font-size: 2.5rem;
+h2 {
+  font-size: 2.5rem;
 }
 
-
-
- 
 /* Add initial opacity and transition for elements */
 .animate-on-scroll {
-@include scroll-animation
+  @include scroll-animation;
 }
- 
+
 /* When elements are in view, make them visible */
 .animate-on-scroll.in-view {
-    @include scroll-inview /* Moves back to original position */
+  @include scroll-inview /* Moves back to original position */;
 }
 
 .download-btn {
-@include download-btn
+  @include download-btn;
 }
-  
-  /* Darker background on mouse-over */
-  .download-btn:hover {
-    @include round-button-hover;
-  }
+
+/* Darker background on mouse-over */
+.download-btn:hover {
+  @include round-button-hover;
+}
 
 /* Contact Section */
 .contact-section {
-    background-color: $bg-color;
-    color: $std-color;
-    padding: 60px 20px;
-    text-align: center;
+  background-color: $bg-color;
+  color: $std-color;
+  padding: 60px 20px;
+  text-align: center;
 }
- 
+
 .section-title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
- 
+
 /* Social Links Container */
 .social-links {
-    display: flex;
-    justify-content: center; /* Center the icons */
-    align-items: center;
-    gap: 20px; /* Space between the icons */
-    margin-top: 20px;
-    
+  display: flex;
+  justify-content: center; /* Center the icons */
+  align-items: center;
+  gap: 20px; /* Space between the icons */
+  margin-top: 20px;
 }
 
-@media (max-width:480px) {
-    .social-links{
-       display:table;
-       table-layout: auto;
-       gap:10px;
-       
-       
-    }
-    
+@media (max-width: 480px) {
+  .social-links {
+    display: table;
+    table-layout: auto;
+    gap: 10px;
+  }
 }
- 
+
 /* Social Icon Styles */
 .social-icon {
-    width: 50px; /* Size of the icons */
-    height: 50px;
-    border-radius: 50%; /* Makes the icons rounded */
-    transition: transform 0.8s ease, box-shadow 0.8s ease; /* Animation */
-    object-fit: cover;
-}
+  width: 50px; /* Size of the icons */
+  height: 50px;
+  border-radius: 50%; /* Makes the icons rounded */
+  transition: all 0.3s ease;
+  object-fit: cover;
+  filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
 
+  &:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+  }
+}
 
 /* Experience and Education Sections */
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 /* Footer Styles */
 footer {
-    background: $bg-color;
-    color: $std-color;
-    padding: 10px 0;
-    text-align: center;
+  background: $bg-color;
+  color: $std-color;
+  padding: 10px 0;
+  text-align: center;
 }
