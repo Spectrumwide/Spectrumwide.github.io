@@ -54,6 +54,8 @@ h2 {
   background-color: rgb(116, 41, 77);
   color: white;
   text-decoration: none;
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
 }
 
 /* Contact Section */
@@ -162,12 +164,16 @@ footer {
   border-radius: 50px;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-decoration: none;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
 }
 
 .hero-btn:hover {
   background-color: rgb(116, 41, 77);
   color: white;
   text-decoration: none;
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
 }
 
 .container {
@@ -366,6 +372,7 @@ footer {
   color: white;
   transition: 0.8s;
   display: flex;
+  text-decoration: none;
 }
 
 .project-card:hover {
@@ -647,12 +654,16 @@ nav.navbar {
   border-radius: 50px;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-decoration: none;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
 }
 
 .hero-btn:hover {
   background-color: rgb(116, 41, 77);
   color: white;
   text-decoration: none;
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
 }
 
 /* Container Styles */
@@ -763,15 +774,20 @@ nav.navbar {
   width: 170px;
   border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  text-decoration: none;
+  cursor: pointer;
   text-align: center;
   margin-left: 40%;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+  text-decoration: none;
 }
 
 .back:hover {
   background-color: rgb(116, 41, 77);
   color: white;
   text-decoration: none;
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
 }
 
 @media (max-width: 480px) {
