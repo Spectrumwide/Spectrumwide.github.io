@@ -27,7 +27,7 @@ window.addEventListener("focus", () => {
 });
 
 function contactbox() {
-  alert(" Contact no: +91 8310984353 ");
+  alert(" Contact no: ");
 }
 
 function emailbox() {
