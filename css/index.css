@@ -612,6 +612,19 @@ nav.navbar {
   overflow: hidden;
 }
 
+.hero-section-sleep {
+  position: relative;
+  height: 100vh;
+  background: url("../Assets/Sleep/Sleep_background.png") center center/cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
 /* Overlay to darken the background */
 .overlay {
   position: absolute;

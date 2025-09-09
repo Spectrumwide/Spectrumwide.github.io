@@ -77,3 +77,15 @@
   text-align: center;
   overflow: hidden;
 }
+@mixin hero-Sleep {
+  position: relative;
+  height: 100vh;
+  background: $Sleep-hero center center/cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $std-color;
+  text-align: center;
+  overflow: hidden;
+}

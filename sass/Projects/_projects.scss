@@ -39,6 +39,9 @@ nav.navbar {
 .hero-section-BMS {
   @include hero-BMS;
 }
+.hero-section-sleep {
+  @include hero-Sleep;
+}
 /* Overlay to darken the background */
 .overlay {
   position: absolute;
