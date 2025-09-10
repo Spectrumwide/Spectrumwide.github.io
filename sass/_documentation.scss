@@ -1,0 +1,121 @@
+// Documentation Page Styles
+
+.text-center {
+  text-align: center !important;
+}
+
+// Color Palette
+.color-palette {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.color-box {
+  text-align: center;
+  background: rgba($std-color, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.color-sample {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin: 0 auto 10px;
+  border: 2px solid rgba($std-color, 0.2);
+}
+
+.color-description {
+  font-size: 0.9em;
+  color: $std-color;
+}
+
+// Font Sample
+.font-sample {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  background: rgba($std-color, 0.1);
+  border-radius: 8px;
+}
+
+.font-weights {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+// List Styling
+.project-text-list {
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: $titles-color;
+        font-size: 1.5em;
+        line-height: 1;
+        top: 0;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        &::before {
+          color: $btn-hover;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+// Skill Badges
+.skill-badges-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .color-palette {
+    gap: 15px;
+  }
+
+  .color-box {
+    width: calc(50% - 15px);
+  }
+
+  .font-weights {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .color-box {
+    width: 100%;
+  }
+}
