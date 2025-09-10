@@ -1,16 +1,19 @@
-
 // Standard inputs
 
-@import'Home/base';
-@import'variables';
-@import'mixins';
+@import "Home/base";
+@import "variables";
+@import "mixins";
 
 // importing each components and css for home page
-@import'Home/hero'; // Hero Section
-@import'Home/about'; // about Us Section
-@import'Home/skills'; // Tech Stack Section
-@import'Home/projects'; // Projects section
-@import'Home/experience'; // Experience Section
+@import "Home/navigation"; // Navigation and Hamburger Menu
+@import "Home/hero"; // Hero Section
+@import "Home/about"; // about Us Section
+@import "Home/skills"; // Tech Stack Section
+@import "Home/projects"; // Projects section
+@import "Home/experience"; // Experience Section
+@import "Home/effects"; // Animation Effects
 
-@import'Projects/projects';
-@import'Projects/Project-bg-props';
+// Project and Documentation Styles
+@import "Projects/projects";
+@import "Projects/Project-bg-props";
+@import "documentation"; // Documentation Page Styles
