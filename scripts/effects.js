@@ -17,7 +17,7 @@ function initParticleEffect() {
 function initTypingEffect() {
   const titles = [
     "Web Developer",
-    "Full Stack Developer",
+    "Front End Developer",
     "UI/UX Designer",
     "Content Creator",
     "Graphic Designer",
