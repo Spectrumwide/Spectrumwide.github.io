@@ -42,6 +42,9 @@ nav.navbar {
 .hero-section-sleep {
   @include hero-Sleep;
 }
+.hero-section-fontnest {
+  @include hero-Fontnest;
+}
 /* Overlay to darken the background */
 .overlay {
   position: absolute;
