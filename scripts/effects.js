@@ -17,11 +17,12 @@ function initParticleEffect() {
 function initTypingEffect() {
   const titles = [
     "Associate Developer",
+    "Content Creator",
     "AEM Developer",
+    "Graphic Designer",
     "Frontend Developer",
     "UI/UX Designer",
-    "Content Creator",
-    "Graphic Designer",
+    "Tech Enthusiast",
   ];
   let titleIndex = 0;
   let charIndex = 0;
