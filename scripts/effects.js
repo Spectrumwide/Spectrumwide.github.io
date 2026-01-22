@@ -16,8 +16,9 @@ function initParticleEffect() {
 // Typing effect for hero title
 function initTypingEffect() {
   const titles = [
-    "Web Developer",
-    "Front End Developer",
+    "Associate Developer",
+    "AEM Developer",
+    "Frontend Developer",
     "UI/UX Designer",
     "Content Creator",
     "Graphic Designer",
