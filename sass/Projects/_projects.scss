@@ -45,6 +45,9 @@ nav.navbar {
 .hero-section-fontnest {
   @include hero-Fontnest;
 }
+.hero-section-ETA {
+  @include hero-ETA;
+}
 /* Overlay to darken the background */
 .overlay {
   position: absolute;
