@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(17, 17, 17);
   color: white;
 }
 
@@ -61,7 +61,7 @@ h2 {
 
 /* Contact Section */
 .contact-section {
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(17, 17, 17);
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -110,7 +110,7 @@ ul {
 
 /* Footer Styles */
 footer {
-  background: rgb(41, 41, 41);
+  background: rgb(17, 17, 17);
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -341,7 +341,7 @@ footer {
 }
 /* About Me Section */
 #about {
-  background-color: rgb(41, 41, 41); /* Dark grey background */
+  background-color: rgb(17, 17, 17); /* Dark grey background */
   /* White text color */
   padding: 40px 20px;
   text-align: center; /* Center align text */
@@ -474,16 +474,28 @@ footer {
 }
 /* Projects Section */
 .projects-section {
-  background-image: url("../Assets/r21do1.gif");
+  position: relative;
+  overflow: hidden;
   padding: 60px 20px;
   color: white;
+  background: linear-gradient(135deg, #02050b 0%, #090d16 25%, #111827 55%, #1a0f2d 100%);
   background-attachment: fixed;
+}
+
+.projects-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(110, 90, 255, 0.26), transparent 28%), radial-gradient(circle at bottom right, rgba(36, 196, 255, 0.18), transparent 32%), linear-gradient(rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0.008));
+  pointer-events: none;
 }
 
 .section-title h2 {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .projects-grid {
@@ -735,7 +747,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(17, 17, 17);
 }
 
 /* Sticky Navbar Styles */
@@ -748,6 +760,126 @@ nav.navbar {
   height: 70px;
   background-color: rgba(0, 0, 0, 0.556) !important;
   font-size: 1.2rem;
+}
+
+/* Page Header (used in projects.html) */
+.page-header {
+  position: relative;
+  background: linear-gradient(135deg, rgba(4, 6, 10, 0.94), rgba(18, 24, 39, 0.88)), url("../Assets/timeline.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 110px 20px 90px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(132, 94, 247, 0.2), transparent 35%), radial-gradient(circle at bottom right, rgba(52, 211, 153, 0.16), transparent 30%);
+  pointer-events: none;
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.page-header .section-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: rgb(252, 223, 192);
+  font-weight: 700;
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+#all-projects {
+  position: relative;
+  background: linear-gradient(180deg, #05080d 0%, #0d1119 100%);
+  padding: 60px 20px 80px;
+  color: white;
+}
+
+#all-projects::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(138, 92, 246, 0.18), transparent 24%), radial-gradient(circle at bottom right, rgba(69, 187, 255, 0.12), transparent 28%);
+  pointer-events: none;
+}
+
+.projects-page-container {
+  position: relative;
+  z-index: 1;
+}
+
+#all-projects .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: rgb(252, 223, 192);
+}
+
+#all-projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+#all-projects .project-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+#all-projects .project-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.24);
+  border-color: rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+#all-projects .project-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+#all-projects .project-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#all-projects .project-description {
+  padding: 18px 18px 22px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: left;
+  color: white;
 }
 
 .hero-section-audit {
@@ -866,6 +998,24 @@ nav.navbar {
   color: white;
   text-align: center;
   overflow: hidden;
+}
+
+.hero-section-projects {
+  position: relative;
+  height: 100vh;
+  background: url("../Assets/Audit/audit-background.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-section-projects .hero-content {
+  text-align: center;
+  padding: 100px 20px;
 }
 
 /* Overlay to darken the background */
@@ -1014,7 +1164,7 @@ nav.navbar {
 /* Project Detail Section */
 /* Footer Styles */
 .footer-projects {
-  background: rgb(41, 41, 41);
+  background: rgb(17, 17, 17);
   color: #fff;
   padding: 10px 0;
   text-align: center;
