@@ -564,6 +564,125 @@ footer {
   color: rgb(252, 223, 192);
 }
 
+.travel-vlogs-section {
+  background: linear-gradient(180deg, #06080d 0%, #0f1726 100%);
+  padding: 70px 20px 80px;
+}
+
+.travel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.travel-card {
+  display: block;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+.travel-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.24);
+  border-color: rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.travel-card:hover .travel-date,
+.travel-card:hover .travel-link,
+.travel-card:focus-visible .travel-date,
+.travel-card:focus-visible .travel-link {
+  text-decoration: none;
+}
+
+.travel-thumb {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  padding: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.travel-thumb-one {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.2), rgba(12, 18, 31, 0.7)), url("../Assets/Videos-thumbnails/kolkata.png") center/cover no-repeat;
+}
+
+.travel-thumb-two {
+  background: linear-gradient(135deg, rgba(51, 18, 70, 0.2), rgba(2, 6, 23, 0.7)), url("../Assets/Videos-thumbnails/puri.png") center/cover no-repeat;
+}
+
+.travel-thumb-three {
+  background: linear-gradient(135deg, rgba(22, 43, 53, 0.2), rgba(6, 10, 17, 0.72)), url("../Assets/Videos-thumbnails/mahakumbh.png") center/cover no-repeat;
+}
+
+.travel-thumb-four {
+  background: linear-gradient(135deg, rgba(15, 30, 48, 0.2), rgba(4, 10, 18, 0.72)), url("../Assets/Videos-thumbnails/uttarkhand.png") center/cover no-repeat;
+}
+
+.travel-thumb-five {
+  background: linear-gradient(135deg, rgba(36, 20, 22, 0.25), rgba(9, 7, 13, 0.72)), url("../Assets/Videos-thumbnails/Shirdi.png") center/cover no-repeat;
+}
+
+.travel-thumb-six {
+  background: linear-gradient(135deg, rgba(16, 54, 62, 0.2), rgba(6, 10, 17, 0.72)), url("../Assets/Videos-thumbnails/Gokarna.png") center/cover no-repeat;
+}
+
+.travel-card-body {
+  padding: 18px 18px 20px;
+}
+
+.travel-card-body h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: rgb(252, 223, 192);
+}
+
+.travel-card-body p {
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+}
+
+.travel-date,
+.travel-link {
+  display: block;
+  width: 100%;
+}
+
+.travel-date {
+  color: rgba(152, 160, 170, 0.9);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.travel-link {
+  color: #b7d7ff;
+  font-weight: 600;
+  margin-top: 4px;
+  text-decoration: none;
+}
+
+.travel-card:hover .travel-link {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .travel-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Timeline */
 .timeline {
   position: relative;
