@@ -569,6 +569,16 @@ footer {
   padding: 70px 20px 80px;
 }
 
+.travel-intro,
+.section-intro {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
 .travel-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

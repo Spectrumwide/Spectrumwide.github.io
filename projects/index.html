@@ -13,8 +13,21 @@
         color: #f3f3f3;
         font-family: Arial, sans-serif;
       }
+      .header-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: rgba(255, 255, 255, 0.04);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .header-bar a {
+        color: #f3f3f3;
+        text-decoration: none;
+        font-weight: 600;
+      }
       .redirect {
-        min-height: 100vh;
+        min-height: calc(100vh - 70px);
         display: grid;
         place-items: center;
         text-align: center;
@@ -26,10 +39,15 @@
     </style>
   </head>
   <body>
+    <div class="header-bar">
+      <div></div>
+      <a href="../index.html">Home</a>
+    </div>
     <div class="redirect">
       <div>
         <h1>Redirecting to Projects page...</h1>
         <p>If you are not redirected, <a href="../projects.html">click here</a>.</p>
+        <p><a href="../index.html">Go to home page</a></p>
       </div>
     </div>
   </body>
