@@ -856,7 +856,6 @@ nav.navbar {
   transform: translateY(-7px);
   box-shadow: 0 22px 40px rgba(0, 0, 0, 0.24);
   border-color: rgba(255, 255, 255, 0.18);
-  background-color: rgba(255, 255, 255, 0.08);
 }
 
 #all-projects .project-card a {
